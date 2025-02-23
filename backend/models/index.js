@@ -1,4 +1,4 @@
-import sequelize from "../config/database.js";
+import {sequelize} from "../config/database.js";
 import Member from "./member.model.js";
 import Membership from "./membership.model.js";
 import Collection from "./collection.model.js";
