@@ -3,7 +3,11 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const sequelize = new Sequelize(process.env.SUPABASE_URL, {
+// console.log(process.env.SUPABASE_DB_URL);
+
+
+const sequelize = new Sequelize(process.env.SUPABASE_DB_URL, {
+
   dialect: "postgres",
   dialectOptions: {
     ssl: {
