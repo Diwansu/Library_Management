@@ -6,7 +6,7 @@ import { sequelize, connectDB } from "./config/database.js";
 import apiRoutes from "./Routes/apiRoutes.js";
 import apiKeyMiddleware from "./middleware/apiKeyMiddleware.js";
 import rateLimit from "express-rate-limit";
-
+    
 dotenv.config();
 const PORT = process.env.PORT;
 const app = express();

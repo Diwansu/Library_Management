@@ -45,6 +45,16 @@ export const createBook = async (req, res) => {
       return res.status(400).json({ error: "All fields are required" });
     }
 
+    const categoryExists = await Category.findByPk(book_cat_id);
+    const collectionExists = await Collection.findByPk(book_collection_id);
+
+    if (!categoryExists) {
+      return res.status(400).json({ error: "Invalid category ID" });
+    }
+    if (!collectionExists) {
+      return res.status(400).json({ error: "Invalid collection ID" });
+    }
+
     const newBook = await Book.create({
       book_name,
       book_cat_id,

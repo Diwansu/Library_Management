@@ -4,7 +4,7 @@ import {
   getBookById,
   createBook,
   updateBook,
-} from "../controller/book.controller.js";
+} from "../controllers/book.controller.js";
 
 import checkEmptyBody from "../middleware/checkEmptyBody.js";
 
