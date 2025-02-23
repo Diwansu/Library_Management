@@ -1,11 +1,10 @@
-import {sequelize} from "../config/database.js";
+import { sequelize } from "../config/database.js";
 import Member from "./member.model.js";
 import Membership from "./membership.model.js";
 import Collection from "./collection.model.js";
 import Category from "./category.model.js";
 import Book from "./book.model.js";
 import Issuance from "./issuance.model.js";
-
 
 Member.hasOne(Membership, { foreignKey: "member_id" });
 Membership.belongsTo(Member, { foreignKey: "member_id" });
@@ -22,6 +21,14 @@ Member.hasMany(Issuance, { foreignKey: "issuance_member" });
 Issuance.belongsTo(Book, { foreignKey: "book_id" });
 Book.hasMany(Issuance, { foreignKey: "book_id" });
 
-const db = { sequelize, Member, Membership, Collection, Category, Book, Issuance };
+const db = {
+  sequelize,
+  Member,
+  Membership,
+  Collection,
+  Category,
+  Book,
+  Issuance,
+};
 
 export default db;

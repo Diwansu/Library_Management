@@ -1,5 +1,5 @@
 import { DataTypes } from "sequelize";
-import {sequelize} from "../config/database.js";
+import { sequelize } from "../config/database.js";
 
 const Member = sequelize.define("Member", {
   mem_id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
@@ -9,4 +9,3 @@ const Member = sequelize.define("Member", {
 });
 
 export default Member;
-
