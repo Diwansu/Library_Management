@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-// console.log(process.env.SUPABASE_DB_URL);
+
 
 
 const sequelize = new Sequelize(process.env.SUPABASE_DB_URL, {
