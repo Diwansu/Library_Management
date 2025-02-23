@@ -1,7 +1,7 @@
 # Library Management System
 
 ## 📌 Overview
-The **Library Management System** is a full-stack application designed to manage library operations such as member registration, book issuance, and return tracking. The backend is built using **Node.js, Express, Sequelize ORM, and PostgreSQL (Supabase)**, while the frontend leverages **React with ShadCN UI** for a seamless user experience.
+The **Library Management System** is a full-stack application designed to manage library operations such as member registration, book issuance, and return tracking. The backend is built using **Node.js, Express, Sequelize ORM, and PostgreSQL (Supabase)**, while the frontend leverages **React ** for a seamless user experience.
 
 ## 🚀 Features
 - 📚 **Book Management**: Add, update, delete, and list books.
