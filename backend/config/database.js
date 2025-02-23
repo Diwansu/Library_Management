@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-// console.log(process.env.SUPABASE_DB_URL);
+
 
 
 const sequelize = new Sequelize(process.env.SUPABASE_DB_URL, {
@@ -24,7 +24,7 @@ const connectDB = async () => {
     console.log("✅ Connected to Database");
   } catch (err) {
     console.error("❌ Database connection error:", err);
-    process.exit(1); 
+    // process.exit(1); 
   }
 };
 
