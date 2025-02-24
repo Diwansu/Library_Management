@@ -27,6 +27,7 @@ export const getBookById = async (req, res) => {
 
 export const createBook = async (req, res) => {
   try {
+    console.log(req.body);
     const {
       book_name,
       book_cat_id,

@@ -7,7 +7,10 @@ const Collection = sequelize.define("Collection", {
     primaryKey: true,
     autoIncrement: true,
   },
-  collection_name: { type: DataTypes.STRING, allowNull: false },
+  collection_name: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
 });
 
 export default Collection;
