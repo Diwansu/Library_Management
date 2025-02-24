@@ -14,8 +14,8 @@ router.get("/", getAllMembers);
 
 router.get("/:id", getMemberById);
 
-router.post("/", checkEmptyBody, createMember);
+router.post("/createMember", checkEmptyBody, createMember);
 
-router.put("/:id", checkEmptyBody, updateMember);
+router.put("/updateMember/:id", checkEmptyBody, updateMember);
 
 export default router;

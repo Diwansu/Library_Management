@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 import { sequelize, connectDB } from "./config/database.js";
 import apiRoutes from "./Routes/apiRoutes.js";
 import apiKeyMiddleware from "./middleware/apiKeyMiddleware.js";
-import rateLimit from "express-rate-limit";
+import rateLimit from "./middleware/rateLimiter.js";
 
 dotenv.config();
 const PORT = process.env.PORT;
@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use("/", apiKeyMiddleware , rateLimit ,  apiRoutes);
+app.use("/", rateLimit, apiKeyMiddleware , apiRoutes);
 
 app.listen(PORT, async (err) => {
   try {

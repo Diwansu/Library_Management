@@ -14,8 +14,8 @@ router.get("/", getAllBooks);
 
 router.get("/:id", getBookById);
 
-router.post("/", checkEmptyBody, createBook);
+router.post("/createBook", checkEmptyBody, createBook);
 
-router.put("/:id", checkEmptyBody, updateBook);
+router.put("/updateBook/:id", checkEmptyBody, updateBook);
 
 export default router;

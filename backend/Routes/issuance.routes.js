@@ -14,8 +14,8 @@ router.get("/", getAllIssuances);
 
 router.get("/:id", getIssuanceById);
 
-router.post("/", checkEmptyBody, createIssuance);
+router.post("/createIssuance", checkEmptyBody, createIssuance);
 
-router.put("/:id", checkEmptyBody, updateIssuance);
+router.put("/updateIssuance/:id", checkEmptyBody, updateIssuance);
 
 export default router;
