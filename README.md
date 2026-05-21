@@ -1,4 +1,5 @@
 # Library Management System
+ Also Visit my latest EDA Project link - https://github.com/Diwansu/Learning-Exploratory-Data-Analysis.git
 
 ## 📌 Overview
 The **Library Management System** is a full-stack application designed to manage library operations such as member registration, book issuance, and return tracking. The backend is built using **Node.js, Express, Sequelize ORM, and PostgreSQL (Supabase)**, while the frontend leverages **React** for a seamless user experience.
